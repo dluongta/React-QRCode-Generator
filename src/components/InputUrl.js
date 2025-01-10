@@ -4,7 +4,7 @@ export default function InputUrl({ url, setUrl, httpRgx }) {
 	
 	const handleValidateUrl = () => {
 		if(url && !httpRgx.test(url)) {
-			setUrl('http://'+url);
+			setUrl(url);
 		}
 	}
 
